@@ -1,0 +1,22 @@
+%h1 Contact
+
+%form{:method => :post, :action => './contact'}
+  .field
+    %label{:for => 'name'} Name
+    %input#name{:type => 'text', :name => 'name', :value => form_value(params[:name])}
+    
+  .field
+    %label{:for => 'email'} Email
+    %input#email{:type => 'email', :name => 'email', :value => form_value(params[:email])}
+    
+  .field
+    %label{:for => 'message'} Message
+    %textarea#message{:name => 'message'}
+      =form_value(params[:message])
+    
+  .actions
+    %input#submit{:type => 'submit', :name => 'submit', :value => 'Send'}
+    
+  #notice
+    ="Email Sent. I'll get back to you shortly" if @success == true
+    ='Please fill in all fields.' if @success == false
