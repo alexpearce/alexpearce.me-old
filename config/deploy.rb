@@ -10,11 +10,11 @@ require 'bundler/capistrano'
 # define some variables
 set :user, 'ubuntu'
 set :domain, 'selene'
-set :applicationdir, "/home/ubuntu/www/alexpearce/public/root/"
+set :applicationdir, "/home/ubuntu/www/alexpearce.me/public/root/"
  
 # scm config
 set :scm, 'git'
-set :repository,  "gitolite:root.git"
+set :repository, "gitolite:root.git"
 set :branch, 'master'
 set :git_shallow_clone, 1
 set :scm_verbose, true

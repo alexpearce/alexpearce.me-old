@@ -40,4 +40,5 @@ DEPENDENCIES
   capistrano
   haml
   pony
+  rack
   sinatra
