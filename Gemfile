@@ -1,7 +1,9 @@
-require 'sinatra'
+source 'http://rubygems.org'
+
+gem 'sinatra'
 
 # layout
-require 'haml'
+gem 'haml'
 
 # email
-require 'pony'
+gem 'pony'
