@@ -9,12 +9,12 @@ require 'bundler/capistrano'
 
 # define some variables
 set :user, 'ubuntu'
-set :domain, '79.125.29.125'
-set :applicationdir, "/home/ubuntu/www/alexpearce/public/"
+set :domain, 'selene'
+set :applicationdir, "/home/ubuntu/www/alexpearce/public/root/"
  
 # scm config
 set :scm, 'git'
-set :repository,  "selene:root.git"
+set :repository,  "gitolite:root.git"
 set :branch, 'master'
 set :git_shallow_clone, 1
 set :scm_verbose, true
@@ -26,12 +26,12 @@ role :db,  domain, :primary => true
  
 # deploy config
 set :deploy_to, applicationdir
-set :deploy_via, :export
+set :deploy_via, :copy
  
 # additional settings
 default_run_options[:pty] = true  # Forgo errors when deploying from windows
 
-#set :use_sudo, false
+set :use_sudo, false
  
 # Passenger
 namespace :deploy do
