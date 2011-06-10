@@ -1,3 +1,7 @@
+require 'bundler'
+
+Bundler.require
+
 require './application.rb'
 
 set :run, false
