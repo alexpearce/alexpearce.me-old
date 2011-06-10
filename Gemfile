@@ -7,3 +7,6 @@ gem 'haml'
 
 # email
 gem 'pony'
+
+# deployment
+gem 'capistrano'
