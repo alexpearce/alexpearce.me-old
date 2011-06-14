@@ -1,5 +1,13 @@
 %h1 Contact
 
+- if is_online
+  %p.gtalk
+    I'm currently signed in to Google Talk so you can
+    = succeed ',' do
+      %a#gtalk talk to me live
+    or use the form below to send me an email.
+
+
 %form{:method => :post, :action => './contact'}
   .field
     %label{:for => 'name'} Name
