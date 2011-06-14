@@ -251,24 +251,24 @@ nav a:hover {
 nav a.current {
   color: #83b624;
 }
-nav #lastfm {
+#lastfm {
   position: absolute;
   bottom: 10px;
   left: 0;
   right: 0;
 }
-nav #lastfm p {
+#lastfm p {
   margin: 0;
   color: #cacaca;
   text-shadow: 0 1px 0 #fff;
 }
-nav #lastfm p a {
+#lastfm a {
   color: #cacaca;
 }
-nav #lastfm p a:hover {
+#lastfm a:hover {
   border: 0;
 }
-nav #lastfm p a:hover span {
+#lastfm a:hover span {
   color: #bbb;
   border-bottom: 1px solid #e5e1f0;
 }
