@@ -80,7 +80,7 @@ $(function() {
   	fetchArtist();
   }
   function fetchArtist() {
-  	$.get('assets/php/lastfm.php', [], function(data) {
+  	$.get('/php/lastfm.php', [], function(data) {
   		var recentTracks = data.recenttracks;
   		// we check to see if track is an array
   		// as if I'm currently scrobbling, the zeroth

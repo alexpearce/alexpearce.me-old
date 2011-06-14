@@ -13,8 +13,6 @@
     
     %script{:src => 'js/libs/modernizr.js'}
     
-    / git!
-    
   %body
   
     #container
@@ -22,20 +20,27 @@
         %img.png_bg{:src => 'img/logo.png', :alt => 'Alex Pearce'}
         %ul
           %li
-            %a{:href => './'} About
+            %a{:href => './', :class => nav_class('/')} About
           %li
-            %a{:href => './work'} Work
+            %a{:href => './work', :class => nav_class('/work')} Work
           %li
-            %a{:href => './projects'} Projects
+            %a{:href => './projects', :class => nav_class('/projects')} Projects
           %li
-            %a{:href => './contact'} Contact
+            %a{:href => './contact', :class => nav_class('/contact')} Contact
+        
+        #lastfm
+          %p
+            %a{:href => 'http://last.fm/user/boba899'} 
+              Last Listened To:
+              %br
+              %span#lastfmArtist ...
             
       #main
         
         = yield
       
       %footer
-        &copy; Alex Pearce
+        &copy; Alex Pearce 2011
 
     %script{:src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'}
     %script
