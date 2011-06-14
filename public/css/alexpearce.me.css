@@ -114,13 +114,13 @@ button, input, select, textarea {
 /* lime green highlighting, yes! */
 ::-moz-selection {
   background: #83b624;
-  color: #fff;
+  color: #444;
   text-shadow: none;
 }
 
 ::selection {
   background: #9fd736;
-  color: #fff;
+  color: #444;
   text-shadow: none;
 }
 
@@ -143,7 +143,7 @@ html.js nav li, html.js h1 {
 }
 
 body {
-  background: url("../img/wall2.jpg") repeat 40% 20%;
+  background: url("../img/wall.jpg") repeat 40% 20%;
 }
 
 .ie6 #container, .ie7 #container, .ie8 #container {
