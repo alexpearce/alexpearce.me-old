@@ -12,3 +12,6 @@ gem 'pony'
 
 # deployment
 gem 'capistrano'
+
+# testing
+gem 'rspec'
