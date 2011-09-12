@@ -27,6 +27,8 @@ GEM
     pony (1.2)
       mail (> 2.0)
     rack (1.3.0)
+    rack-test (0.6.1)
+      rack (>= 1.0)
     rspec (2.6.0)
       rspec-core (~> 2.6.0)
       rspec-expectations (~> 2.6.0)
@@ -50,5 +52,6 @@ DEPENDENCIES
   haml
   pony
   rack
+  rack-test
   rspec
   sinatra

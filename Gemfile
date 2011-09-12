@@ -15,3 +15,5 @@ gem 'capistrano'
 
 # testing
 gem 'rspec'
+
+gem 'rack-test'
