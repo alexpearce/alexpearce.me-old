@@ -143,7 +143,8 @@ html.js nav li, html.js h1 {
 }
 
 body {
-  background: url("../img/wall.jpg") repeat 40% 20%;
+/*  background: url("../img/wall.jpg") repeat 40% 20%;*/
+  background: url('../img/tile3.png') repeat;
 }
 
 .ie6 #container, .ie7 #container, .ie8 #container {
@@ -159,10 +160,10 @@ body {
   margin: -213px 0 0 -480px;
   background: #fff;
   border-top: 1px solid #fff;
-  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 #container p {
   margin: 0 0 23px 0;
