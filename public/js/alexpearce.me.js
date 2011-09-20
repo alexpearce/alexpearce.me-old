@@ -2,6 +2,7 @@ $(function() {
   
 	Cufon.replace('nav ul')('h1');
 	
+	// small caps patch
 	$('nav li a').each(function(idx) {
     var initial = $(this).text(),
         upper = initial.replace(/\b([A-Za-z0-9])/g,'<span class="caps">$1</span>');
@@ -9,11 +10,6 @@ $(function() {
   });
 	
 	$('nav li, h1').show();
-	
-	if ($('html.ie6').length === 0) {
-	  // http://dowebsitesneedtolookexactlythesameineverybrowser.com/
-	  lightbox.init($('a:has(img)')); 
-	}
 
 	var $fields = $('#name, #email, #message');
 	//var $notice = $('#notice').hide();
@@ -22,47 +18,8 @@ $(function() {
 		$(this).removeClass('error');
 	});
 	
-	/*$('form').submit(function(e) {
-		$button = $('input[type=submit]', this).attr('disabled', 'disabled');
-		
-		var success = true;
-		
-		$fields.each(function() {
-			if ($(this).val().length === 0) {
-				$(this).addClass('error');
-				success = false;
-			}
-		});
-		
-		if (success === false) {
-			$notice.text('Please complete all fields.').fadeIn('slow');
-			$button.removeAttr("disabled")
-		} else if (success === true) {
-			$.post('assets/php/send.php', $(this).serialize(), function(data) {
-					if (data.status === '1') {
-						hold = true;
-						$('form').fadeOut('slow', function() {
-							$fields.val('');
-							$(this).fadeIn();
-							$notice.text(data.message).fadeIn();
-						});
-					} else if (data.status === '0') {
-						$notice.text(data.message).addClass('error').fadeIn();
-					}
-					$button.removeAttr("disabled");
-				}, 'json'
-			);
-		}
-		
-		setTimeout(function() {
-			$notice.fadeOut('slow', function() {
-				$(this).text('');
-			});
-		}, 1e4);
-		
-		e.preventDefault();
-	});*/
-	
+	// thanks, SO!
+	// http://stackoverflow.com/questions/4845705/
 	var artist;
   if (Modernizr.localstorage) {
   	// there is storage
