@@ -143,8 +143,7 @@ html.js nav li, html.js h1 {
 }
 
 body {
-/*  background: url("../img/wall.jpg") repeat 40% 20%;*/
-  background: url('../img/tile3.png') repeat;
+  background: url('../img/cubes.png') repeat;
 }
 
 .ie6 #container, .ie7 #container, .ie8 #container {
@@ -230,45 +229,56 @@ nav img {
   position: relative;
   top: -75px;
 }
+
 nav ul {
   width: 150px;
   margin: 0 auto;
   font-size: 24px;
 }
+
 nav ul li {
   font-family: Baskerville, Garamond, serif;
   font-weight: 500;
   padding: 8px 0;
 }
+
 nav ul li .caps {
   font-size: 25px;
 }
+
 nav a {
   color: #58478b;
 }
+
 nav a:hover {
   border-bottom: 1px solid #e5e1f0;
 }
+
 nav a.current {
   color: #83b624;
 }
+
 #lastfm {
   position: absolute;
   bottom: 10px;
   left: 0;
   right: 0;
 }
+
 #lastfm p {
   margin: 0;
   color: #cacaca;
   text-shadow: 0 1px 0 #fff;
 }
+
 #lastfm a {
   color: #cacaca;
 }
+
 #lastfm a:hover {
   border: 0;
 }
+
 #lastfm a:hover span {
   color: #bbb;
   border-bottom: 1px solid #e5e1f0;
@@ -283,22 +293,33 @@ nav a.current {
   overflow: hidden;
   zoom: 1;
 }
+
 #main ul {
   list-style: none;
 }
+
 #main img {
-  border: 3px solid #eee;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  top: 0px;
+  padding: 5px;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transition: top 0.3s;
 }
+
 #main a {
   color: #83b624;
 }
+
 #main a img:hover {
-  border: 3px solid #dcdcdc;
+  
+  top: -5px;
+  background: #fafafa;
 }
+
 #main a:hover {
   text-decoration: underline;
 }
@@ -306,28 +327,17 @@ nav a.current {
 #portfolio ul {
   list-style: none;
 }
+
 #portfolio ul li {
   position: relative;
   float: left;
   margin: 0 40px 40px 0;
 }
+
 #portfolio ul li span {
-  position: absolute;
   display: none;
-  height: 15px;
-  top: 78px;
-  left: 3px;
-  right: 4px;
-  width: 150px;
-  padding: 5px;
-  background: #000;
-  background: rgba(0, 0, 0, 0.5);
-  font-size: 11px;
-  color: #eee;
 }
-#portfolio ul li:hover span.alt {
-  display: block;
-}
+
 #portfolio ul img {
   width: 160px;
   height: 100px;
@@ -336,6 +346,7 @@ nav a.current {
 form {
   position: relative;
 }
+
 form #notice {
   position: absolute;
   top: 0;
@@ -343,15 +354,18 @@ form #notice {
   left: 325px;
   text-align: center;
 }
+
 form > div {
   margin: 10px 0;
 }
+
 form label {
   display: block;
   float: left;
   width: 75px;
   padding: 8px 10px 0 0;
 }
+
 form input[type=text], form input[type=email], form textarea {
   padding: 5px;
   border: 1px solid #d1d1d1;
@@ -369,6 +383,7 @@ form input[type=text], form input[type=email], form textarea {
   -o-transition: all 0.1s;
   transition: all 0.1s;
 }
+
 form input[type=text].error, form input[type=email].error, form textarea.error {
   -webkit-box-shadow: 0 0 2px rgba(255, 0, 0, 0.2);
   -moz-box-shadow: 0 0 2px rgba(255, 0, 0, 0.2);
@@ -376,9 +391,11 @@ form input[type=text].error, form input[type=email].error, form textarea.error {
   box-shadow: 0 0 2px rgba(255, 0, 0, 0.2);
   border: 1px solid #ffaaaa;
 }
+
 form input[type=text]:hover, form input[type=email]:hover, form textarea:hover {
   border: 1px solid #C7C0DE;
 }
+
 form input[type=text]:focus, form input[type=email]:focus, form textarea:focus {
   outline: none;
   -webkit-box-shadow: 0 0 2px #aa9ecd;
@@ -390,10 +407,12 @@ form input[type=text]:focus, form input[type=email]:focus, form textarea:focus {
 form input[type=text], form input[type=email] {
   width: 200px;
 }
+
 form textarea {
   width: 400px;
   height: 150px;
 }
+
 form input[type=submit] {
   border: 1px solid #d1d1d1;
   background: #e9e9e9;
@@ -412,19 +431,23 @@ form input[type=submit] {
   border-radius: 2px;
   text-shadow: 0 1px 1px #fff;
 }
+
 form input[type=submit]:disabled {
   color: #a2a6ac;
 }
+
 form input[type=submit]:hover {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
+
 form input[type=submit]:active {
   background: #d5d5d5;
   border: 1px solid #888;
 }
+
 form input[type=submit][disabled="disabled"] {
   color: #ddd;
   -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -433,12 +456,14 @@ form input[type=submit][disabled="disabled"] {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   cursor: default;
 }
+
 form input[type=submit][disabled="disabled"]:hover {
   -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   -o-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
+
 form input[type=submit][disabled="disabled"]:active {
   background: #e9e9e9;
   border: 1px solid #d1d1d1;
@@ -473,9 +498,11 @@ footer {
   padding: 50px;
   text-align: center;
 }
+
 #server-code a {
   color: #83b624;
 }
+
 #server-code a:hover {
   text-decoration: underline;
 }
@@ -483,6 +510,7 @@ footer {
 .ie6 #lightbox, .ie7 #lightbox, .ie8 #lightbox {
   background: url("../img/lightbox-bg.png");
 }
+
 .ie6 #lightbox p, .ie7 #lightbox p, .ie8 #lightbox p {
   background: #fff;
 }
@@ -497,6 +525,7 @@ footer {
   background: rgba(255, 255, 255, 0.35) url("../img/spinner.gif") no-repeat 50% 50%;
   display: none;
 }
+
 #lightbox p {
   position: absolute;
   bottom: 15px;
@@ -512,9 +541,11 @@ footer {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
+
 #lightbox p a {
   color: #433669;
 }
+
 #lightbox p a:hover {
   text-decoration: underline;
 }

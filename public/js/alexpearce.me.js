@@ -18,6 +18,8 @@ $(function() {
 		$(this).removeClass('error');
 	});
 	
+	lightbox.init($('#main').find('a:has(img)'));
+	
 	// thanks, SO!
 	// http://stackoverflow.com/questions/4845705/
 	var artist;
