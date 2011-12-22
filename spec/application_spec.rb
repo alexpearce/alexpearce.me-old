@@ -65,7 +65,7 @@ describe 'AlexPearce.me' do
     last_response.body.should include('Please fill in all fields.')
   end
   
-  it "should not allow contact form submission with a blank address" do
+  it "should not allow contact form submission with a blank message" do
     post '/contact', params = {:name => 'Some Name', :email => 'email@domain.tld', :message => ''}
     last_response.body.should include('Please fill in all fields.')
   end
