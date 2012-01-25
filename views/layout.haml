@@ -44,17 +44,18 @@
 
     %script{:src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'}
     %script
-      !window.jQuery && document.write(unescape('%3Cscript src="/js/libs/jquery.js"%3E%3C/script%3E"'));
+      :plain
+        !window.jQuery && document.write(unescape('%3Cscript src="/js/libs/jquery.js"%3E%3C/script%3E"'));
 
-      var _gaq = [['_setAccount', 'UA-21764435-1'], ['_trackPageview']];
+        var _gaq = [['_setAccount', 'UA-21764435-1'], ['_trackPageview']];
 
-      (function() {
-        var ga = document.createElement('script');
-        ga.async = true;
-        ga.src = 'http.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
+        (function() {
+          var ga = document.createElement('script');
+          ga.async = true;
+          ga.src = 'http.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ga, s);
+        })();
 
     %script{:src => '/js/cufon-archer.js'}
 
