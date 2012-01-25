@@ -10,23 +10,18 @@ require 'bundler/capistrano'
 # define some variables
 set :user, 'ubuntu'
 set :domain, 'selene'
-set :applicationdir, "/home/ubuntu/www/alexpearce.me/public/root/"
+set :applicationdir, '/home/ubuntu/www/alexpearce.me/public/root'
  
 # scm config
-set :scm, 'git'
-set :repository, "gitolite:root.git"
-set :branch, 'master'
-set :git_shallow_clone, 1
-set :scm_verbose, true
+set :scm, :git
+set :repository, 'git@codebasehq.com:alxprc/alexpearceme/root.git'
+# deploy config
+set :deploy_to, applicationdir
  
 # server roles
 role :web, domain
 role :app, domain
 role :db,  domain, :primary => true
- 
-# deploy config
-set :deploy_to, applicationdir
-set :deploy_via, :copy
  
 # additional settings
 default_run_options[:pty] = true  # Forgo errors when deploying from windows
